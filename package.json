@@ -1,7 +1,7 @@
 {
   "name": "ngu-utility",
   "version": "1.0.0",
-  "description": "Utility angular components,directives,pipes and services",
+  "description": "Angular utility components,directives,pipes and services",
   "module": "dist/ngu-utility.js",
   "main": "dist/ngu-utility.umd.js",
   "types": "dist/ngu-utility.d.ts",
@@ -16,13 +16,13 @@
     "test:watch": "npm run test -- --auto-watch --no-single-run",
     "publish-lib": "npm run test && npm run build"
   },
-  "files": [
-    "dist"
-  ],
   "keywords": [
     "angular",
     "angular2",
-    "ngu-utility"
+    "ngu-utility",
+	"letter-avatar",
+	"gmail avatar",
+	"letter avatar"
   ],
   "repository": {
     "type": "git",
