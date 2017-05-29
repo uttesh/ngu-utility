@@ -1,13 +1,12 @@
 import { Component, ElementRef, OnInit, OnDestroy, AfterViewInit, Input } from '@angular/core';
-import {TEMPLATE, DEFAULT_STYLES} from './template';
+import {TEMPLATE} from './template';
 import {LAmeta,Attributes} from './lameta';
 
 declare function unescape(x: string): string;
 
 @Component({
     selector: 'ngu-letter-avatar',
-    template: TEMPLATE,
-    styles: [DEFAULT_STYLES]
+    template: TEMPLATE
 })
 export class NguLetterAvatarComponent implements OnInit, OnDestroy, AfterViewInit {
     private letteravatar: any;

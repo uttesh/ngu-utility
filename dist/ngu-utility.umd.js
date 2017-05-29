@@ -5,7 +5,6 @@
 }(this, (function (exports,_angular_core,_angular_common) { 'use strict';
 
 var TEMPLATE = "<ng-content></ng-content>";
-var DEFAULT_STYLES = "";
 
 var LAmeta = (function () {
     function LAmeta() {
@@ -261,8 +260,7 @@ var NguLetterAvatarComponent = (function () {
 NguLetterAvatarComponent.decorators = [
     { type: _angular_core.Component, args: [{
                 selector: 'ngu-letter-avatar',
-                template: TEMPLATE,
-                styles: [DEFAULT_STYLES]
+                template: TEMPLATE
             },] },
 ];
 /** @nocollapse */
@@ -344,7 +342,6 @@ NguUtilityModule.ctorParameters = function () { return []; };
  */
 
 exports.ɵa = NguLetterAvatarComponent;
-exports.ɵc = DEFAULT_STYLES;
 exports.ɵb = TEMPLATE;
 exports.NguUtilityModule = NguUtilityModule;
 

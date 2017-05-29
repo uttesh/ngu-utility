@@ -2,7 +2,6 @@ import { Component, ElementRef, Input, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 var TEMPLATE = "<ng-content></ng-content>";
-var DEFAULT_STYLES = "";
 
 var LAmeta = (function () {
     function LAmeta() {
@@ -258,8 +257,7 @@ var NguLetterAvatarComponent = (function () {
 NguLetterAvatarComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ngu-letter-avatar',
-                template: TEMPLATE,
-                styles: [DEFAULT_STYLES]
+                template: TEMPLATE
             },] },
 ];
 /** @nocollapse */
@@ -340,4 +338,4 @@ NguUtilityModule.ctorParameters = function () { return []; };
  * Generated bundle index. Do not edit.
  */
 
-export { NguLetterAvatarComponent as ɵa, DEFAULT_STYLES as ɵc, TEMPLATE as ɵb, NguUtilityModule };
+export { NguLetterAvatarComponent as ɵa, TEMPLATE as ɵb, NguUtilityModule };

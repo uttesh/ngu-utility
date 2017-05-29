@@ -1,6 +1,6 @@
 {
   "name": "ngu-utility",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Angular utility components,directives,pipes and services",
   "module": "dist/ngu-utility.js",
   "main": "dist/ngu-utility.umd.js",
