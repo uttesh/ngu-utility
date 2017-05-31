@@ -40,13 +40,9 @@ import { NguUtilityModule } from 'ngu-utility/ngu-utility.module'; // <-- import
   bootstrap: [AppComponent]
 })
 ```
-
-## API
-[TBD]
-
-
 ### 1. Letter Avatar Component
 
+ letter avatar component, letter avatar for the given string. Like gmail or google inbox text avatar i.e. First letter of the given data will be the avatar
 
 ```HTML
 <ngu-letter-avatar avatar-data='{{title}}' ></ngu-letter-avatar> </h4>
@@ -72,9 +68,18 @@ attribute name | default | description
 `avatar-border` | false | set the avatarborder to 'true' for the white border to avatar.
 `avatar-custom-border` | no default value | using this attribute set the custom style to avatar borders i.e <code> "border:5px solid black"</code>.
 
-### Directive
-
-[TBD]
+ preview snaps :
+ 
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/demo1.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/demo2.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/numbers.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/special_charaters.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/chinese.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/kannada.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/round_shape_digit_special.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/round_chinese_kannada.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/avatar_border1.png)
+![demo](https://raw.github.com/uttesh/ngletteravatar/master/demo/avatar_border2.png)
 
 
 ## Building from source
