@@ -45,7 +45,7 @@ import { NguUtilityModule } from 'ngu-utility/ngu-utility.module'; // <-- import
  letter avatar component, letter avatar for the given string. Like gmail or google inbox text avatar i.e. First letter of the given data will be the avatar
 
 ```HTML
-<ngu-letter-avatar avatar-data='{{title}}' ></ngu-letter-avatar> </h4>
+<ngu-letter-avatar avatar-data='{{title}}' ></ngu-letter-avatar>
 ```
 ## Option attirbutes
 
