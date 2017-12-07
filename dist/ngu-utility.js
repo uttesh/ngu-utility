@@ -1,54 +1,10 @@
-import { Component, ElementRef, Input, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import '@angular/core';
+import '@angular/common';
 
 var TEMPLATE = "<ng-content></ng-content>";
 
-var LAmeta = (function () {
-    function LAmeta() {
-        this.defaultColors = ["#5A8770", "#B2B7BB", "#6FA9AB", "#F5AF29", "#0088B9", "#F18636", "#D93A37", "#A6B12E", "#5C9BBC", "#F5888D", "#9A89B5", "#407887", "#9A89B5", "#5A8770", "#D33F33", "#A2B01F", "#F0B126", "#0087BF", "#F18636", "#0087BF", "#B2B7BB", "#72ACAE", "#9C8AB4", "#5A8770", "#EEB424", "#407887"];
-        this.defaultTextColor = '#ffffff';
-        this.defaultBorder = 'border:5px solid white';
-        this.defaultTriangleup = 'width: 0;height: 0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-bottom: 100px solid;';
-        this.deafultFontsize = '30';
-        this.defaultHeight = '50';
-        this.deafultWidth = '50';
-        this.defaultRadius = 'border-radius:50%;';
-        this.deafultDynamic = 'false';
-        this.defaultRotatedeg = '0';
-        this.defaultAvatarborder = 'false';
-        this.defaultFontWeight = '400';
-        this.defaultFontFamily = 'HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica, Arial,Lucida Grande, sans-serif';
-    }
-    return LAmeta;
-}());
-var Attributes = (function () {
-    function Attributes() {
-        this.alphabetcolors = 'avatar-alphabet-colors';
-        this.textColor = 'avatar-text-color';
-        this.defaultBorder = 'avatar-default-border';
-        this.triangleup = 'avatar-triangle-up';
-        this.fontsize = 'avatar-font-size';
-        this.height = 'avatar-height';
-        this.width = 'avatar-width';
-        this.radius = 'avatar-radius';
-        this.avatarcustombgcolor = 'avatar-custom-bg-color';
-        this.dynamic = 'avatar-dynamic';
-        this.fontWeight = 'avatar-font-weight';
-        this.fontFamily = 'avatar-font-family';
-        this.shape = 'avatar-shape';
-        this.data = 'avatar-data';
-        this.rotatedeg = 'avatar-rotate-degree';
-        this.avatarborder = 'avatar-border';
-    }
-    return Attributes;
-}());
-
-var NguLetterAvatarComponent = (function () {
+var NguLetterAvatarComponent = /** @class */ (function () {
     function NguLetterAvatarComponent(el) {
-        this._meta = new LAmeta();
-        this.attribute = new Attributes();
-        this.base = 'data:image/svg+xml;base64,';
-        this.charCount = '1';
         this.letteravatar = el.nativeElement;
     }
     NguLetterAvatarComponent.prototype.ngAfterViewInit = function () {
@@ -140,8 +96,8 @@ var NguLetterAvatarComponent = (function () {
         var colorIndex;
         var color = '';
         /**
-        * Populate the colors according to attributes
-        */
+                * Populate the colors according to attributes
+                */
         if (c.charCodeAt(0) < 65) {
             color = getRandomColors();
         }
@@ -207,7 +163,21 @@ var NguLetterAvatarComponent = (function () {
  * @param {type} color
  * @returns {unresolved}
  */
-    NguLetterAvatarComponent.prototype.createSvg = function (width, height, color, cobj) {
+    /**
+     * Populate the svg tag which will used for the avatar generation
+     * @param {type} width
+     * @param {type} height
+     * @param {type} color
+     * @returns {unresolved}
+     */
+    NguLetterAvatarComponent.prototype.createSvg = /**
+     * Populate the svg tag which will used for the avatar generation
+     * @param {type} width
+     * @param {type} height
+     * @param {type} color
+     * @returns {unresolved}
+     */
+    function (width, height, color, cobj) {
         var svgTag = document.createElement('svg');
         svgTag.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
         svgTag.setAttribute('pointer-events', 'none');
@@ -229,7 +199,25 @@ var NguLetterAvatarComponent = (function () {
  * @param {type} fontsize
  * @returns {unresolved}
  */
-    NguLetterAvatarComponent.prototype.getCharacterTextTag = function (character, textColor, fontFamily, fontWeight, fontsize) {
+    /**
+     *  Generate the Letter tag by using the svg text element
+     * @param {type} character
+     * @param {type} textColor
+     * @param {type} fontFamily
+     * @param {type} fontWeight
+     * @param {type} fontsize
+     * @returns {unresolved}
+     */
+    NguLetterAvatarComponent.prototype.getCharacterTextTag = /**
+     *  Generate the Letter tag by using the svg text element
+     * @param {type} character
+     * @param {type} textColor
+     * @param {type} fontFamily
+     * @param {type} fontWeight
+     * @param {type} fontsize
+     * @returns {unresolved}
+     */
+    function (character, textColor, fontFamily, fontWeight, fontsize) {
         var textTag = document.createElement('text');
         textTag.setAttribute('text-anchor', 'middle');
         textTag.setAttribute('x', '50%');
@@ -245,46 +233,27 @@ var NguLetterAvatarComponent = (function () {
     /**
     * Need to work on this in later releases
     */
-    NguLetterAvatarComponent.prototype.ngOnInit = function () {
+    /**
+         * Need to work on this in later releases
+         */
+    NguLetterAvatarComponent.prototype.ngOnInit = /**
+         * Need to work on this in later releases
+         */
+    function () {
     };
     /**
      * Need to work on this in later releases
      */
-    NguLetterAvatarComponent.prototype.ngOnDestroy = function () {
+    /**
+         * Need to work on this in later releases
+         */
+    NguLetterAvatarComponent.prototype.ngOnDestroy = /**
+         * Need to work on this in later releases
+         */
+    function () {
     };
     return NguLetterAvatarComponent;
 }());
-NguLetterAvatarComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'ngu-letter-avatar',
-                template: TEMPLATE
-            },] },
-];
-/** @nocollapse */
-NguLetterAvatarComponent.ctorParameters = function () { return [
-    { type: ElementRef, },
-]; };
-NguLetterAvatarComponent.propDecorators = {
-    'alphabetcolors': [{ type: Input, args: ['avatar-alphabet-colors',] },],
-    'textColor': [{ type: Input, args: ['avatar-text-color',] },],
-    'defaultBorder': [{ type: Input, args: ['avatar-default-border',] },],
-    'triangleup': [{ type: Input, args: ['avatar-triangle-up',] },],
-    'fontsize': [{ type: Input, args: ['avatar-font-size',] },],
-    'height': [{ type: Input, args: ['avatar-height',] },],
-    'width': [{ type: Input, args: ['avatar-width',] },],
-    'fontWeight': [{ type: Input, args: ['avatar-font-weight',] },],
-    'fontFamily': [{ type: Input, args: ['avatar-font-family',] },],
-    'radius': [{ type: Input, args: ['avatar-radius',] },],
-    'dynamic': [{ type: Input, args: ['avatar-dynamic',] },],
-    'rotatedeg': [{ type: Input, args: ['avatar-rotate-degree',] },],
-    'charCount': [{ type: Input, args: ['avatar-char-count',] },],
-    'data': [{ type: Input, args: ['avatar-data',] },],
-    'avatarBorderStyle': [{ type: Input, args: ['avatar-border-style',] },],
-    'avatarborder': [{ type: Input, args: ['avatar-border',] },],
-    'avatarcustomborder': [{ type: Input, args: ['avatar-custom-border',] },],
-    'shape': [{ type: Input, args: ['avatar-shape',] },],
-    'avatarcustombgcolor': [{ type: Input, args: ['avatar-custom-bg-color',] },],
-};
 /**
  * Get the random colors
  * @returns {String}
@@ -317,22 +286,11 @@ function getFirstAndLastName(data) {
     }
 }
 
-var NguUtilityModule = (function () {
+var NguUtilityModule = /** @class */ (function () {
     function NguUtilityModule() {
     }
     return NguUtilityModule;
 }());
-NguUtilityModule.decorators = [
-    { type: NgModule, args: [{
-                imports: [CommonModule],
-                declarations: [NguLetterAvatarComponent
-                ],
-                providers: [],
-                exports: [NguLetterAvatarComponent]
-            },] },
-];
-/** @nocollapse */
-NguUtilityModule.ctorParameters = function () { return []; };
 
 /**
  * Generated bundle index. Do not edit.
