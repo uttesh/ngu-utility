@@ -1,6 +1,6 @@
 {
   "name": "ngu-utility",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Angular utility components,directives,pipes and services",
   "main": "ngu-utility.umd.js",
   "jsnext:main": "ngu-utility.esm.js",

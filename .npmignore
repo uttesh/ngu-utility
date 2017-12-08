@@ -1,0 +1,9 @@
+/lib
+/tools
+.travis.yml
+CHANGELOG.md
+config-library.js
+package.json
+rollup.config.esm
+rollup.config.umd
+tsconfig.json
