@@ -26,7 +26,7 @@ A UMD bundle is also provided for systems which do not support FESM.
 // app.module.ts
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {NguUtilityModule} from "ngu-utility"; // <-- import the module
+import {NguUtilityModule} from "ngu-utility/dist"; // <-- import the module
 
 @NgModule({
   declarations: [
