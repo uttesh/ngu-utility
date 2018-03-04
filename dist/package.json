@@ -1,13 +1,31 @@
 {
   "name": "ngu-utility",
-  "version": "1.0.4",
-  "description": "",
-  "main": "ngu-utility.umd.js",
-  "jsnext:main": "ngu-utility.esm.js",
-  "module": "ngu-utility.esm.js",
+  "version": "1.0.6",
+  "description": "Angular utility components,directives,pipes and services",
+  "main": "bundles/ngu-utility.umd.js",
+  "jsnext:main": "bundles/es5/ngu-utility.js",
+  "module": "esm5/ngu-utility.js",
   "types": "ngu-utility.d.ts",
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build": "rimraf dist && ng-packagr -p package.json"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "ngu-utility",
+    "letter-avatar",
+    "gmail avatar",
+    "letter avatar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uttesh/ngu-utility"
+  },
+  "bugs": {
+    "url": "https://github.com/uttesh/ngu-utility/issues"
+  },
+  "author": "Uttesh Kumar T.H. <uttesh@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -16,6 +34,23 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "rxjs": "^5.3.0",
-    "zone.js": "^0.8.9"
-  }
+    "zone.js": "^0.8.9",
+    "tslib": "^1.7.1"
+  },
+  "devDependencies": {
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@types/node": "^7.0.14",
+    "ng-packagr": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "tsickle": "^0.27.2",
+    "typescript": "^2.6.2"
+  },
+  "es2015": "esm2015/ngu-utility.js",
+  "typings": "ngu-utility.d.ts",
+  "metadata": "ngu-utility.metadata.json"
 }

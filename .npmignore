@@ -1,10 +1,5 @@
-/lib
-/tools
+/src
 .travis.yml
 CHANGELOG.md
-config-library.js
 package.json
-rollup.config.esm
-rollup.config.umd
 tsconfig.json
-/build
