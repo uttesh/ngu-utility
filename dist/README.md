@@ -26,13 +26,15 @@ A UMD bundle is also provided for systems which do not support FESM.
 // app.module.ts
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
-import {NguUtilityModule} from "ngu-utility"; // <-- import the module
+import {NguUtilityModule} from "ngu-utility/dist"; // <-- import the module
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  
+  ],
   imports: [
-    NguUtilityModule
+  
+   NguUtilityModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,7 +45,7 @@ import {NguUtilityModule} from "ngu-utility"; // <-- import the module
  letter avatar component, letter avatar for the given string. Like gmail or google inbox text avatar i.e. First letter of the given data will be the avatar
 
 ```HTML
-<ngu-letter-avatar [avatar-data]='title' ></ngu-letter-avatar>
+<ngu-letter-avatar avatar-data='{{title}}' ></ngu-letter-avatar> </h4>
 ```
 ## Option attirbutes
 
@@ -82,7 +84,7 @@ attribute name | default | description
 
 ## Building from source
 
-Requires globally-installed node (tested with v8.x) & npm. 
+Requires globally-installed node (tested with v5.x) & npm. 
 
 ```
 npm install
