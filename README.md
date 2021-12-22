@@ -1,4 +1,4 @@
-# Utility for Angular (vx+)[![Build Status](https://travis-ci.org/uttesh/ngu-utility.svg?branch=master)](https://travis-ci.org/uttesh/ngu-utility)
+# Utility for Angular[![Build Status](https://travis-ci.org/uttesh/ngu-utility.svg?branch=master)]
 
 The utility components,service,directives and pipes for Angular.
 
