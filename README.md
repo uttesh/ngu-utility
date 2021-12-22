@@ -1,4 +1,4 @@
-# Utility for Angular[![Build Status](https://travis-ci.org/uttesh/ngu-utility.svg?branch=master)]
+# Utility for Angular
 
 The utility components,service,directives and pipes for Angular.
 
